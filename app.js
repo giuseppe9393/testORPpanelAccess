@@ -1,0 +1,1 @@
+const sections=["Richiedente","Progetto","Rilevazione","GDPR","Open Science","Dichiarazioni"];document.getElementById("wizard").innerHTML=sections.map(s=>`<div class="card"><div class="card-body"><h4>${s}</h4></div></div>`).join('');document.getElementById('orpForm').onsubmit=e=>{e.preventDefault();alert('ORP-F1-'+new Date().getFullYear()+'-001');};
